@@ -4,7 +4,7 @@ export const airsoft = {
     namespaced: true,
     state: {
         airsoft : [],
-        total_airsoft : 0,
+        total : 0,
         isLoadingAdd : false,
         isLoadingEdit : false,
     },

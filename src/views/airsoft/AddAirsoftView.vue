@@ -102,7 +102,7 @@ export default{
       name: yup.string().required(),
       description: yup.string().required(),
       price: yup.string().required(),
-      image:yup.mixed().required()
+      image:yup.mixed().required(),
     });
     return {
       schema,
@@ -120,7 +120,6 @@ export default{
   methods : {
     selectImage(image) {
       this.form.image = image[0];
-      console.log(image)
       this.previewImage = URL.createObjectURL(image[0]);
     },
     onSubmit(){

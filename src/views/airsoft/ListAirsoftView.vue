@@ -99,7 +99,6 @@ export default{
     },
     watch :{
       name: _.debounce(function(){
-        console.log(this.name);
         this.page = 1;
         this.getAirsoft(this.page); 
       },500)
@@ -109,7 +108,6 @@ export default{
           isLoading : false,
           page : 1,
           name : "",
-
        } 
     },
     methods :{
